@@ -24,7 +24,7 @@ const WeatherResponseSchema = Schema.Struct({
 export const getTemperature = Effect.gen(function* () {
   const client = (yield* HttpClient.HttpClient).pipe(HttpClient.filterStatusOk)
 
-  return yield* HttpClientRequest.get('/public/weather.json').pipe(
+  return yield* HttpClientRequest.get('http://localhost:5173/public/weather.json').pipe(
     client.execute,
     Effect.flatMap(HttpClientResponse.schemaBodyJson(WeatherResponseSchema)),
   )

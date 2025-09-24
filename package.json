@@ -4,8 +4,8 @@
   "description": "",
   "scripts": {
     "format": "prettier --write .",
-    "demo:unstableTask": "node --experimental-transform-types src/unstableTask.ts",
-    "demo:weather": "node --experimental-transform-types src/weatherNode.ts",
+    "demo:unstableTask": "node --no-warnings=ExperimentalWarning --experimental-transform-types src/unstableTask.ts",
+    "demo:weather": "node --no-warnings=ExperimentalWarning --experimental-transform-types src/weatherNode.ts",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",

@@ -1,0 +1,45 @@
+{
+  "name": "effect-on-fe-talk",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "format": "prettier --write .",
+    "demo:unstableTask": "node --experimental-transform-types src/unstableTask.ts",
+    "demo:weather": "node --experimental-transform-types src/weatherNode.ts",
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "Pavel Kepka <kepi@kepi.name>",
+  "license": "Unlicense",
+  "packageManager": "pnpm@10.17.0",
+  "type": "module",
+  "dependencies": {
+    "@effect-atom/atom-react": "^0.2.0",
+    "@effect/platform": "^0.91.1",
+    "@effect/platform-browser": "^0.71.0",
+    "@effect/platform-node": "^0.97.1",
+    "@effect/schema": "^0.75.5",
+    "effect": "^3.17.14",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@effect/language-service": "^0.40.1",
+    "@eslint/js": "^9.36.0",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.3",
+    "eslint": "^9.36.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.21",
+    "globals": "^16.4.0",
+    "prettier": "^3.6.2",
+    "serve": "^14.2.5",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.44.1",
+    "vite": "^7.1.7"
+  }
+}
